@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+	<head>
+		<title>测试js闭包</title>
+		<meta charset="utf-8"></meta>
+		<script src="jquery-1.11.3.js"></script>
+	</head>
+
+	<span id="test">woshixiaoming</span>
+
+
+	<script>
+		$(function(){
+			$("#test").on("click",function(){
+
+				console.log('i am OK');
+			})
+		})
+		var xx = 'i am roshan';
+		var yy = 'i am function';
+		(function (temp){
+
+			console.log(temp)
+		})(yy)
+
+
+
+	</script>
+
+</html>
